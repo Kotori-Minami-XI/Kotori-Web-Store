@@ -1474,8 +1474,65 @@ insert  into `pms_category`(`cat_id`,`name`,`parent_cid`,`cat_level`,`show_statu
 ```
 
 ## 2 Environment setup
-### 2.1 Run renren-fast-vue
+### 2.1 Download Node.js
+```
+https://nodejs.org/zh-cn/
+```
+
+### 2.2 Install & setup python
+Download python
+```
+https://www.python.org/download/releases/2.7/
+```
+Setup python path in system path
+
+### 2.3 Setup cnpm
+Setup taobao mirror
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+Run PowerShell with admin
+```
+set-ExecutionPolicy RemoteSigned
+```
+
+### 2.4 Install plugins
 ```
 cnpm install
+```
+
+Modify node-sass version in package json
+```javascript
+"node-sass": "4.14.1",
+```
+
+This process is incredibly complicated to complete. If problem occurs, try the commands below.
+```
+cnpm install --global node-gyp@latest 
+cnpm install --global node-sass@latest
+cnpm uninstall node-sass -g
+cnpm install node-sass -g
+```
+
+### 2.5 Setup & Run renren-fast-vue
+Clone renren-fast-vue
+```
+https://gitee.com/renrenio/renren-fast-vue.git
+```
+
+Clone renren-fast
+```
+git clone https://gitee.com/renrenio/renren-fast-vue.git
+```
+
+Clone renren-generator
+```
+git clone https://gitee.com/renrenio/renren-generator.git
+```
+
+Run renren-fast-vue
+```
 cnpm run dev
 ```
+ 
