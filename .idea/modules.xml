@@ -3,12 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Kotori-Web-Store.iml" filepath="$PROJECT_DIR$/.idea/Kotori-Web-Store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KotoriStore-common/KotoriStore-common.iml" filepath="$PROJECT_DIR$/KotoriStore-common/KotoriStore-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/KotoriStore-coupon/KotoriStore-coupon.iml" filepath="$PROJECT_DIR$/KotoriStore-coupon/KotoriStore-coupon.iml" />
       <module fileurl="file://$PROJECT_DIR$/KotoriStore-member/KotoriStore-member.iml" filepath="$PROJECT_DIR$/KotoriStore-member/KotoriStore-member.iml" />
       <module fileurl="file://$PROJECT_DIR$/KotoriStore-order/KotoriStore-order.iml" filepath="$PROJECT_DIR$/KotoriStore-order/KotoriStore-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/KotoriStore-product/KotoriStore-product.iml" filepath="$PROJECT_DIR$/KotoriStore-product/KotoriStore-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/KotoriStore-ware/KotoriStore-ware.iml" filepath="$PROJECT_DIR$/KotoriStore-ware/KotoriStore-ware.iml" />
       <module fileurl="file://$PROJECT_DIR$/renren-fast/renren-fast.iml" filepath="$PROJECT_DIR$/renren-fast/renren-fast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/renren-generator/renren-generator.iml" filepath="$PROJECT_DIR$/renren-generator/renren-generator.iml" />
     </modules>
   </component>
 </project>
