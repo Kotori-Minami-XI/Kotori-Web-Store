@@ -1,5 +1,14 @@
 # Kotori-Web-Store
 
+## 0. Micro-Service modules
+| Microservice        | port  | Database        |
+| ------------------- | ----- | --------------- |
+| KotoriStore-coupon  | 7000  | kotoristore_sms |
+| KotoriStore-member  | 8000  | kotoristore_ums |
+| KotoriStore-order   | 9000  | kotoristore_oms |
+| KotoriStore-product | 10000 | kotoristore_pms |
+| KotoriStore-ware    | 11000 | kotoristore_wms |
+
 ## 1. Database
 
 ### 1.1 Create databases
