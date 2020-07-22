@@ -2,15 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="KotoriStore-product" />
         <module name="KotoriStore-common" />
-        <module name="KotoriStore-order" />
-        <module name="KotoriStore-coupon" />
         <module name="KotoriStore-ware" />
+        <module name="KotoriStore-coupon" />
+        <module name="KotoriStore-order" />
         <module name="KotoriStore-member" />
         <module name="renren-fast" />
         <module name="renren-generator" />
@@ -19,11 +20,11 @@
     <bytecodeTargetLevel target="8">
       <module name="Kotori-Web-Store" target="1.5" />
       <module name="KotoriStore-common" target="1.8" />
-      <module name="KotoriStore-coupon" target="1.5" />
-      <module name="KotoriStore-member" target="1.5" />
-      <module name="KotoriStore-order" target="1.5" />
+      <module name="KotoriStore-coupon" target="1.8" />
+      <module name="KotoriStore-member" target="1.8" />
+      <module name="KotoriStore-order" target="1.8" />
       <module name="KotoriStore-product" target="1.8" />
-      <module name="KotoriStore-ware" target="1.5" />
+      <module name="KotoriStore-ware" target="1.8" />
       <module name="renren-fast" target="1.8" />
       <module name="renren-generator" target="1.8" />
     </bytecodeTargetLevel>
@@ -31,7 +32,11 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="KotoriStore-common" options="-parameters" />
+      <module name="KotoriStore-coupon" options="-parameters" />
+      <module name="KotoriStore-member" options="-parameters" />
+      <module name="KotoriStore-order" options="-parameters" />
       <module name="KotoriStore-product" options="-parameters" />
+      <module name="KotoriStore-ware" options="-parameters" />
       <module name="renren-fast" options="-parameters" />
       <module name="renren-generator" options="-parameters" />
     </option>

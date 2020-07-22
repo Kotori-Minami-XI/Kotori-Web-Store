@@ -6,13 +6,15 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/KotoriStore-coupon/pom.xml" />
-        <option value="$PROJECT_DIR$/KotoriStore-member/pom.xml" />
-        <option value="$PROJECT_DIR$/KotoriStore-order/pom.xml" />
-        <option value="$PROJECT_DIR$/KotoriStore-product/pom.xml" />
-        <option value="$PROJECT_DIR$/KotoriStore-ware/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/renren-fast/pom.xml" />
+        <option value="$PROJECT_DIR$/KotoriStore-common/pom.xml" />
+        <option value="$PROJECT_DIR$/KotoriStore-product/pom.xml" />
+        <option value="$PROJECT_DIR$/KotoriStore-coupon/pom.xml" />
+        <option value="$PROJECT_DIR$/renren-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/KotoriStore-member/pom.xml" />
+        <option value="$PROJECT_DIR$/KotoriStore-order/pom.xml" />
+        <option value="$PROJECT_DIR$/KotoriStore-ware/pom.xml" />
       </list>
     </option>
   </component>

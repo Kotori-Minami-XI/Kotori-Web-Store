@@ -2,8 +2,12 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/KotoriStore-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/KotoriStore-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/KotoriStore-coupon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/KotoriStore-member/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/KotoriStore-member/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/KotoriStore-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/KotoriStore-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/KotoriStore-ware/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/renren-fast/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/renren-generator/src/main/java" charset="UTF-8" />
   </component>
