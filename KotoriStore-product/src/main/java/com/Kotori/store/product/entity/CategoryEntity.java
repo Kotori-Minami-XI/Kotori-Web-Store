@@ -1,10 +1,13 @@
 package com.Kotori.store.product.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
+
 import lombok.Data;
 
 /**
@@ -20,41 +23,46 @@ public class CategoryEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 分类id
+	 * Category id
 	 */
 	@TableId
 	private Long catId;
 	/**
-	 * 分类名称
+	 * Category name
 	 */
 	private String name;
 	/**
-	 * 父分类id
+	 * Parent category id
 	 */
 	private Long parentCid;
 	/**
-	 * 层级
+	 * Category level
 	 */
 	private Integer catLevel;
 	/**
-	 * 是否显示[0-不显示，1显示]
+	 * Display or not[0-no，1-yes]
 	 */
 	private Integer showStatus;
 	/**
-	 * 排序
+	 * Product display order
 	 */
 	private Integer sort;
 	/**
-	 * 图标地址
+	 * Icon path for the product
 	 */
 	private String icon;
 	/**
-	 * 计量单位
+	 * The unit for the Product
 	 */
 	private String productUnit;
 	/**
-	 * 商品数量
+	 * Remaining Product number
 	 */
 	private Integer productCount;
-
+	/**
+	 * Sub categories
+	 * Not exist in the table
+	 */
+	@TableField(exist = false)
+	private List<CategoryEntity> children;
 }

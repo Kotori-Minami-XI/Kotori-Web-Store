@@ -11,3 +11,4 @@ public class StoreGatewayApplication {
         SpringApplication.run(StoreGatewayApplication.class);
     }
 }
+
