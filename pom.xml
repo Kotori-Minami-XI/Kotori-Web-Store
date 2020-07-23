@@ -18,6 +18,7 @@
         <module>renren-fast</module>
         <module>renren-generator</module>
         <module>KotoriStore-common</module>
+        <module>KotoriStore-gateway</module>
     </modules>
 
 </project>

@@ -11,9 +11,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.Kotori.store</groupId>
-    <artifactId>KotoriStore-coupon</artifactId>
+    <artifactId>KotoriStore-gateway</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <description>Coupon Management Module</description>
+    <description>Gateway Management Module</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,10 +39,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-        <!-- feign -->
         <dependency>
+            <!-- spring cloud gateway -->
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
     </dependencies>

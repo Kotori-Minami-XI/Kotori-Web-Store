@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: KotoriStore-gateway
+  cloud:
+    nacos:
+      config.server-addr: 127.0.0.1:8848
+      config:
+        namespace: 23097d0b-9555-455a-8b54-d00607e3bd93
