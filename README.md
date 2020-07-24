@@ -1513,7 +1513,7 @@ cnpm install
 
 Modify node-sass version in package json
 ```javascript
-"node-sass": "4.14.1",
+"node-sass": "4.14.1"
 ```
 
 This process is incredibly complicated to complete. If problem occurs, try the commands below.

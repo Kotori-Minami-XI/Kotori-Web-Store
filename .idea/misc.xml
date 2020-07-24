@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/KotoriStore-member/pom.xml" />
         <option value="$PROJECT_DIR$/KotoriStore-order/pom.xml" />
         <option value="$PROJECT_DIR$/KotoriStore-ware/pom.xml" />
+        <option value="$PROJECT_DIR$/KotoriStore-gateway/pom.xml" />
       </list>
     </option>
   </component>

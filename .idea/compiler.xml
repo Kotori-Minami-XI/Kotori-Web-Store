@@ -9,9 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="KotoriStore-product" />
         <module name="KotoriStore-common" />
-        <module name="KotoriStore-order" />
-        <module name="KotoriStore-coupon" />
         <module name="KotoriStore-ware" />
+        <module name="KotoriStore-coupon" />
+        <module name="KotoriStore-order" />
         <module name="KotoriStore-member" />
         <module name="renren-fast" />
         <module name="renren-generator" />
