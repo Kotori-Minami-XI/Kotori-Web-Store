@@ -39,17 +39,16 @@ public class CategoryController {
 
 
     /**
-     * 信息
+     * Obtain a category by its id
      */
     @RequestMapping("/info/{catId}")
     public R info(@PathVariable("catId") Long catId){
 		CategoryEntity category = categoryService.getById(catId);
-
-        return R.ok().put("category", category);
+        return R.ok().put("data", category);
     }
 
     /**
-     * 保存
+     * Insert a category to database
      */
     @RequestMapping("/save")
     public R save(@RequestBody CategoryEntity category){
@@ -59,7 +58,7 @@ public class CategoryController {
     }
 
     /**
-     * 修改
+     * Update a category
      */
     @RequestMapping("/update")
     public R update(@RequestBody CategoryEntity category){
@@ -69,7 +68,17 @@ public class CategoryController {
     }
 
     /**
-     * 删除
+     * Update a category
+     */
+    @RequestMapping("/update/sort")
+    public R updateSort(@RequestBody CategoryEntity[] categories){
+        categoryService.updateBatchById(Arrays.asList(categories));
+
+        return R.ok();
+    }
+
+    /**
+     * Remove a category
      */
     @RequestMapping("/delete")
     public R delete(@RequestBody Long[] catIds){
