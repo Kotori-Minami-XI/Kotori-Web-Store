@@ -1,5 +1,7 @@
 <!--  -->
 <template>
+<div>
+
 <el-tree :data="menus" :props="defaultProps" :expand-on-click-node="false" show-checkbox node-key="catId" :default-expanded-keys="expandedKey">
 <span class="custom-tree-node" slot-scope="{ node, data }">
   <span>{{ node.label }}</span>
@@ -9,6 +11,21 @@
     </span>
   </span>
 </el-tree>
+
+<el-dialog title="提示" :visible.sync="dialogVisible" width="30%">
+  <el-form :model="category">
+    <el-form-item label="活动名称">
+      <el-input v-model="category.name" autocomplete="off"></el-input>
+    </el-form-item>
+  </el-form>
+
+  <span slot="footer" class="dialog-footer">
+    <el-button @click="dialogVisible = false">取 消</el-button>
+    <el-button type="primary" @click="addCategory">确 定</el-button>
+  </span>
+</el-dialog>
+
+</div>
 </template>
 
 <script>
@@ -20,6 +37,8 @@ export default {
 components: {},
 data() {
     return {
+      category: {name:"", parentCid:0, catLevel:0, showStatus:1, sort:0},
+      dialogVisible : false,
       menus: [],
       expandedKey: [],
       defaultProps: {
@@ -44,9 +63,27 @@ methods: {
             console.log("succeed in obtaining menu",data.data);
             this.menus = data.data;
         })
-      },
+    },
     append(data) {
-        console.log("append",data);
+        this.dialogVisible = true;
+        this.category.parentCid = data.catId;
+        this.category.cateLevel = data.cateLevel*1 + 1;
+
+    },
+    addCategory() {
+      this.$http({
+        url: this.$http.adornUrl('/product/category/save'),
+        method: 'post',
+        data: this.$http.adornData(this.category, false)
+        }).then(({data})=>{
+            this.$message({
+              type: 'success',
+              message: '保存成功!'
+            });
+            this.dialogVisible = false;
+            this.getMenus();
+            this.expandedKey = [node.category.parentCid];
+        });
     },
     remove(node, data) {
         var ids = [data.catId];
