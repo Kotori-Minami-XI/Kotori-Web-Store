@@ -46,6 +46,12 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return categoryTree;
     }
 
+    @Override
+    public void removeMenuByIds(List<Long> asList) {
+        //Todo: Other reference?
+        baseMapper.deleteBatchIds(asList);
+    }
+
     /***
      * Find children Category in regression
      * Terminate the regression once category level is beyond 3 since there are only three levels of classes

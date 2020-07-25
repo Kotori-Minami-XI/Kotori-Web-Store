@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: KotoriStore-product-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: c7e99984-0e39-43a1-9a40-a306212f20fb

@@ -1,0 +1,20 @@
+2020-07-22 23:16:56,799 INFO DEFAULT_GROUP@@KotoriStore-member-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.111.1:8000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-07-22 23:16:56,802 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-member-service, ips: 192.168.111.1:8000_true,
+
+2020-07-22 23:18:05,807 INFO DEFAULT_GROUP@@KotoriStore-coupon-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.111.1:7000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-07-22 23:18:05,807 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-coupon-service, ips: 192.168.111.1:7000_true,
+
+2020-07-22 23:25:00,917 INFO {POS} {IP-DISABLED} valid: 192.168.111.1:7000@DEFAULT@DEFAULT_GROUP@@KotoriStore-coupon-service, region: unknown, msg: client timeout after 15000, last beat: 1595431481569
+
+2020-07-22 23:25:02,560 INFO {POS} {IP-DISABLED} valid: 192.168.111.1:8000@DEFAULT@DEFAULT_GROUP@@KotoriStore-member-service, region: unknown, msg: client timeout after 15000, last beat: 1595431482709
+
+2020-07-22 23:25:16,072 INFO DEFAULT_GROUP@@KotoriStore-coupon-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.111.1:7000:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-07-22 23:25:16,072 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-coupon-service, ips: 
+
+2020-07-22 23:25:17,569 INFO DEFAULT_GROUP@@KotoriStore-member-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.111.1:8000:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-07-22 23:25:17,569 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-member-service, ips: 
+

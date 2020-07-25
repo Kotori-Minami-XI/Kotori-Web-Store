@@ -2,6 +2,7 @@ package com.Kotori.store.product.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.io.Serializable;
@@ -42,6 +43,7 @@ public class CategoryEntity implements Serializable {
 	/**
 	 * Display or not[0-no，1-yes]
 	 */
+	@TableLogic(value = "1", delval = "0")
 	private Integer showStatus;
 	/**
 	 * Product display order

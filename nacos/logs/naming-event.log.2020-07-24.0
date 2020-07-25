@@ -1,0 +1,10 @@
+2020-07-24 23:31:30,711 INFO DEFAULT_GROUP@@renren-fast {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.111.1:8080:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-07-24 23:31:30,714 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@renren-fast, ips: 192.168.111.1:8080_true,
+
+2020-07-24 23:33:50,631 INFO {POS} {IP-DISABLED} valid: 192.168.111.1:8080@DEFAULT@DEFAULT_GROUP@@renren-fast, region: unknown, msg: client timeout after 15000, last beat: 1595604811106
+
+2020-07-24 23:33:57,494 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@renren-fast, ips: 192.168.111.1:8080_false,
+
+2020-07-24 23:34:02,490 INFO service: DEFAULT_GROUP@@renren-fast {POS} {IP-ENABLED} valid: 192.168.111.1:8080@DEFAULT, region: unknown, msg: client beat ok
+
