@@ -12,6 +12,7 @@
         <module name="KotoriStore-ware" />
         <module name="KotoriStore-coupon" />
         <module name="KotoriStore-order" />
+        <module name="KotoriStore-thirdParty" />
         <module name="KotoriStore-member" />
         <module name="renren-fast" />
         <module name="renren-generator" />
@@ -26,6 +27,7 @@
       <module name="KotoriStore-member" target="1.8" />
       <module name="KotoriStore-order" target="1.8" />
       <module name="KotoriStore-product" target="1.8" />
+      <module name="KotoriStore-thirdParty" target="1.8" />
       <module name="KotoriStore-ware" target="1.8" />
       <module name="renren-fast" target="1.8" />
       <module name="renren-generator" target="1.8" />
@@ -39,6 +41,7 @@
       <module name="KotoriStore-member" options="-parameters" />
       <module name="KotoriStore-order" options="-parameters" />
       <module name="KotoriStore-product" options="-parameters" />
+      <module name="KotoriStore-thirdParty" options="-parameters" />
       <module name="KotoriStore-ware" options="-parameters" />
       <module name="renren-fast" options="-parameters" />
       <module name="renren-generator" options="-parameters" />

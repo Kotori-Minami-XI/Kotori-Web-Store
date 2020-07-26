@@ -1,9 +1,17 @@
 package com.Kotori.store.product.controller;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import com.Kotori.common.valid.AddGroup;
+import com.Kotori.common.valid.UpdateGroup;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +23,7 @@ import com.Kotori.store.product.service.BrandService;
 import com.Kotori.common.utils.PageUtils;
 import com.Kotori.common.utils.R;
 
+import javax.validation.Valid;
 
 
 /**
@@ -31,7 +40,7 @@ public class BrandController {
     private BrandService brandService;
 
     /**
-     * 列表
+     * Obtain all brands in page
      */
     @RequestMapping("/list")
     public R list(@RequestParam Map<String, Object> params){
@@ -42,7 +51,7 @@ public class BrandController {
 
 
     /**
-     * 信息
+     * Obtain a brand info by id
      */
     @RequestMapping("/info/{brandId}")
     public R info(@PathVariable("brandId") Long brandId){
@@ -52,27 +61,27 @@ public class BrandController {
     }
 
     /**
-     * 保存
+     * Insert a new brand to the database
+     * Dedicated to AddGroup
      */
     @RequestMapping("/save")
-    public R save(@RequestBody BrandEntity brand){
-		brandService.save(brand);
-
+    public R save(@Validated({AddGroup.class}) @RequestBody BrandEntity brand, BindingResult result){
+        brandService.save(brand);
         return R.ok();
     }
 
     /**
-     * 修改
+     * update a brand
      */
     @RequestMapping("/update")
-    public R update(@RequestBody BrandEntity brand){
+    public R update(@Validated({UpdateGroup.class}) @RequestBody BrandEntity brand){
 		brandService.updateById(brand);
 
         return R.ok();
     }
 
     /**
-     * 删除
+     * Delete a brand
      */
     @RequestMapping("/delete")
     public R delete(@RequestBody Long[] brandIds){

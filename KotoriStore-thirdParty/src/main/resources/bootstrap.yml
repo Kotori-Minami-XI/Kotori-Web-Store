@@ -1,0 +1,17 @@
+server:
+  port:  30000
+
+spring:
+  application:
+    name: KotoriStore-thridParty
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 4f02d7a9-91ef-49eb-928e-14f0db16a473
+        extension-configs[0]:
+          data-id: oss.yml
+          group: DEFAULT_GROUP
+          refresh: true

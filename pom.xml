@@ -19,6 +19,7 @@
         <module>renren-generator</module>
         <module>KotoriStore-common</module>
         <module>KotoriStore-gateway</module>
+        <module>KotoriStore-thirdParty</module>
     </modules>
 
 </project>

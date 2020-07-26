@@ -2,9 +2,10 @@
 <template>
 <div>
 <el-switch v-model="draggable" active-text="开启拖拽" inactive-text="关闭拖拽"></el-switch>
+<el-button type="danger" @click="batchDelete">批量删除</el-button>
 
 <el-tree :data="menus" :props="defaultProps" :expand-on-click-node="false" show-checkbox node-key="catId" :default-expanded-keys="expandedKey" :draggable="draggable" :allow-drop="allowDrop"
-         @node-drop="handleDrop">
+         @node-drop="handleDrop" ref="menuTree">
 <span class="custom-tree-node" slot-scope="{ node, data }">
   <span>{{ node.label }}</span>
     <span>
@@ -240,6 +241,32 @@ methods: {
                 this.findMaxLevel(node.children[i]);
             }
         }
+    },
+    batchDelete() {
+        let checkedNodes = this.$refs.menuTree.getCheckedNodes();
+        let deletedNodeIds = [];
+        for (let i = 0; i < checkedNodes.length; i++) {
+            deletedNodeIds.push(checkedNodes[i].catId);
+        }
+        this.$confirm(`此操作将删除[${deletedNodeIds}], 是否继续?`, '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(()=>{
+            this.$http({
+            url: this.$http.adornUrl('/product/category/delete'),
+            method: 'post',
+            data: this.$http.adornData(deletedNodeIds, false)
+            }).then(({data})=>{
+                this.$message({
+                type: 'success',
+                message: '删除成功!'})
+            });
+        }).catch(()=>{
+            this.$message({
+            type: 'info',
+            message: '已取消删除'})
+        })
     }
 },
 //生命周期 - 创建完成（可以访问当前this实例）
