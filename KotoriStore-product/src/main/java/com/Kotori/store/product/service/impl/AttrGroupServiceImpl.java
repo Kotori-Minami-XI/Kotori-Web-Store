@@ -26,4 +26,27 @@ public class AttrGroupServiceImpl extends ServiceImpl<AttrGroupDao, AttrGroupEnt
         return new PageUtils(page);
     }
 
+    @Override
+    public PageUtils queryPage(Map<String, Object> params, Long catelogId) {
+        if (0 == catelogId) { // Obtain all attributes
+            IPage<AttrGroupEntity> page = this.page(
+                    new Query<AttrGroupEntity>().getPage(params),
+                    new QueryWrapper<AttrGroupEntity>());
+            return new PageUtils(page);
+        } else {
+            QueryWrapper<AttrGroupEntity> queryWrapper =
+                    new QueryWrapper<AttrGroupEntity>().eq("catelogId",catelogId);
+            String key = (String)params.get("key");
+            if (null != key) {
+                queryWrapper.and((obj)->{
+                    obj.eq("attr_group_id",key).or().like("attr_group_name",key);
+                });
+                IPage<AttrGroupEntity> page = this.page(
+                        new Query<AttrGroupEntity>().getPage(params),
+                        queryWrapper);
+                return new PageUtils(page);
+            }
+        }
+        return null;
+    }
 }

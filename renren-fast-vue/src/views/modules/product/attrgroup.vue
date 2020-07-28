@@ -104,6 +104,7 @@ export default {
 components: {Category:Category, AddOrUpdate:AddOrUpdate},
     data () {
         return {
+        catId: 0,
         dataForm: {
             key: ''
         },
@@ -125,7 +126,7 @@ activated () {
       getDataList () {
         this.dataListLoading = true
         this.$http({
-          url: this.$http.adornUrl('/product/attrgroup/list'),
+          url: this.$http.adornUrl(`/product/attrgroup/list/${this.catId}`),
           method: 'get',
           params: this.$http.adornParams({
             'page': this.pageIndex,
@@ -144,7 +145,10 @@ activated () {
         })
       },
       treeNodeClick(data, node, component) {
-
+        if (node.level == 3) {
+          this.catId = data.catId;
+          this.getDataList();
+        }
       },
       // 每页数
       sizeChangeHandle (val) {
