@@ -70,3 +70,25 @@
 
 2020-07-27 21:26:03,021 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-product-service, ips: 192.168.111.1:10000_true,
 
+2020-07-29 23:28:25,484 INFO DEFAULT_GROUP@@renren-fast {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.111.1:8080:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-07-29 23:28:25,488 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@renren-fast, ips: 192.168.111.1:8080_true,
+
+2020-07-29 23:28:29,786 INFO DEFAULT_GROUP@@KotoriStore-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.111.1:88:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-07-29 23:28:29,786 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-gateway, ips: 192.168.111.1:88_true,
+
+2020-07-29 23:29:44,996 INFO DEFAULT_GROUP@@KotoriStore-product-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.111.1:10000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-07-29 23:29:44,996 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-product-service, ips: 192.168.111.1:10000_true,
+
+2020-07-29 23:29:50,313 INFO DEFAULT_GROUP@@KotoriStore-thridParty {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.111.1:30000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-07-29 23:29:50,313 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-thridParty, ips: 192.168.111.1:30000_true,
+
+2020-07-29 23:48:35,304 INFO {POS} {IP-DISABLED} valid: 192.168.111.1:10000@DEFAULT@DEFAULT_GROUP@@KotoriStore-product-service, region: unknown, msg: client timeout after 15000, last beat: 1596037696920
+
+2020-07-29 23:48:37,490 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-product-service, ips: 192.168.111.1:10000_false,
+
+2020-07-29 23:48:42,483 INFO service: DEFAULT_GROUP@@KotoriStore-product-service {POS} {IP-ENABLED} valid: 192.168.111.1:10000@DEFAULT, region: unknown, msg: client beat ok
+

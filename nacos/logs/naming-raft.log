@@ -104,3 +104,39 @@
 
 2020-07-27 21:26:04,595 INFO leader timeout, start voting,leader: {"heartbeatDueMs":5000,"ip":"192.168.111.1:8848","leaderDueMs":16791,"state":"CANDIDATE","term":31,"voteFor":"192.168.111.1:8848"}, term: 31
 
+2020-07-29 23:27:45,253 INFO initializing Raft sub-system
+
+2020-07-29 23:27:45,160 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"192.168.111.1","key":"192.168.111.1:0","lastRefTime":0,"servePort":0,"site":"unknown","weight":1}]
+
+2020-07-29 23:27:45,278 INFO finish loading all datums, size: 0 cost 25 ms.
+
+2020-07-29 23:27:45,280 INFO cache loaded, datum count: 0, current term: 0
+
+2020-07-29 23:27:45,281 INFO finish to load data from disk, cost: 28 ms.
+
+2020-07-29 23:27:45,284 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-07-29 23:27:45,287 INFO raft notifier started
+
+2020-07-29 23:27:45,290 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.111.1","key":"192.168.111.1:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-07-29 23:27:45,527 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2020-07-29 23:27:50,136 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-07-29 23:28:00,025 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"192.168.111.1","key":"192.168.111.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-07-29 23:28:00,025 INFO server list is updated, dead: 1, servers: [{"adWeight":0,"alive":false,"ip":"192.168.111.1","key":"192.168.111.1:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-07-29 23:28:00,026 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.111.1","key":"192.168.111.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-07-29 23:28:03,430 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.111.1","key":"192.168.111.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-07-29 23:28:25,434 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@renren-fast
+
+2020-07-29 23:28:29,785 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@KotoriStore-gateway
+
+2020-07-29 23:29:44,995 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@KotoriStore-product-service
+
+2020-07-29 23:29:50,312 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@KotoriStore-thridParty
+
