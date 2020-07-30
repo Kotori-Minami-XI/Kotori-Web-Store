@@ -1,5 +1,6 @@
 package com.Kotori.store.product.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
@@ -8,11 +9,10 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 属性分组
+ * Attribute group
  * 
  * @author Kotori
  * @email 543566812@qq.com
- * @date 2020-07-21 23:40:44
  */
 @Data
 @TableName("pms_attr_group")
@@ -20,29 +20,33 @@ public class AttrGroupEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 分组id
+	 * attrGroupId
 	 */
 	@TableId
 	private Long attrGroupId;
 	/**
-	 * 组名
+	 * attrGroupName
 	 */
 	private String attrGroupName;
 	/**
-	 * 排序
+	 * sort
 	 */
 	private Integer sort;
 	/**
-	 * 描述
+	 * descript
 	 */
 	private String descript;
 	/**
-	 * 组图标
+	 * icon
 	 */
 	private String icon;
 	/**
-	 * 所属分类id
+	 * catelog Id
 	 */
 	private Long catelogId;
-
+	/**
+	 * catelog Path
+	 */
+	@TableField(exist = false)
+	private Long[] catelogPath;
 }

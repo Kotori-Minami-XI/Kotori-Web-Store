@@ -33,6 +33,7 @@ public class ProductControllerAdvice {
 
     @ExceptionHandler(value = Exception.class)
     public R handleException(Exception e) {
+        e.printStackTrace();
         return R.error(BizCode.UNKNOWN_EXCEPTION.getCode(), BizCode.UNKNOWN_EXCEPTION.getMsg());
     }
 

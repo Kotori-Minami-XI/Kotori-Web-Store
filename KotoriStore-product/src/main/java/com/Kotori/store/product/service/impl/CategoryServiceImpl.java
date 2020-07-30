@@ -69,4 +69,26 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         }
         return childList;
     }
+
+    /***
+     * Obtain category route from the first class down to the bottom class
+     * Such as [1, 22,165]
+     */
+    @Override
+    public Long[] findCategoryPath(Long catelogId) {
+        List<Long> paths = new ArrayList<>();
+
+        CategoryEntity category = this.getById(catelogId);
+
+        while (true) {
+            paths.add(0, category.getCatId());
+            category = this.getById(category.getParentCid());
+            if (category.getParentCid() == 0) {
+                break;
+            }
+        }
+        paths.add(0,category.getCatId());
+
+        return (Long[])paths.toArray(new Long[paths.size()-1]);
+    }
 }
