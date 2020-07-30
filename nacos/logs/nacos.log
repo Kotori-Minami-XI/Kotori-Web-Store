@@ -350,3 +350,23 @@
 
 2020-07-30 17:00:09,441 INFO [capacityManagement] start correct usage
 
+2020-07-30 17:00:09,447 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-30 17:04:12,273 WARN clearConfigHistory start
+
+2020-07-30 17:10:09,443 INFO [capacityManagement] start correct usage
+
+2020-07-30 17:10:09,446 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-30 17:14:12,272 WARN clearConfigHistory start
+
+2020-07-30 17:20:09,441 INFO [capacityManagement] start correct usage
+
+2020-07-30 17:20:09,445 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-30 17:24:12,270 WARN clearConfigHistory start
+
+2020-07-30 17:30:09,441 INFO [capacityManagement] start correct usage
+
+2020-07-30 17:30:09,445 INFO [capacityManagement] end correct usage, cost: 0s
+
