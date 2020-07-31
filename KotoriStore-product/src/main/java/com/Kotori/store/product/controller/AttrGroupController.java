@@ -24,7 +24,6 @@ import com.Kotori.common.utils.R;
  *
  * @author Kotori
  * @email 543566812@qq.com
- * @date 2020-07-21 23:40:44
  */
 @RestController
 @RequestMapping("product/attrgroup")

@@ -28,15 +28,19 @@ public class AttrGroupServiceImpl extends ServiceImpl<AttrGroupDao, AttrGroupEnt
 
     @Override
     public PageUtils queryPage(Map<String, Object> params, Long catelogId) {
+        String key = (String)params.get("key");
         if (0 == catelogId) { // Obtain all attributes
+            QueryWrapper<AttrGroupEntity> queryWrapper = new QueryWrapper<AttrGroupEntity>();
+            if (null != key) {
+                queryWrapper.like("attr_group_id",key).or().like("attr_group_name",key);
+            }
             IPage<AttrGroupEntity> page = this.page(
                     new Query<AttrGroupEntity>().getPage(params),
-                    new QueryWrapper<AttrGroupEntity>());
+                    queryWrapper);
             return new PageUtils(page);
         } else {
             QueryWrapper<AttrGroupEntity> queryWrapper =
                     new QueryWrapper<AttrGroupEntity>().eq("catelog_id",catelogId);
-            String key = (String)params.get("key");
             if (null != key) {
                 queryWrapper.and((obj)->{
                     obj.eq("attr_group_id",key).or().like("attr_group_name",key);
