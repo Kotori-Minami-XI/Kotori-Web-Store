@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.Kotori.store.vo.AttrResponseVo;
 import com.Kotori.store.vo.AttrVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -46,9 +47,8 @@ public class AttrController {
      */
     @RequestMapping("/info/{attrId}")
     public R info(@PathVariable("attrId") Long attrId){
-		AttrEntity data = attrService.getById(attrId);
-
-        return R.ok().put("data", data);
+        AttrResponseVo data = attrService.getAttrInfo(attrId);
+        return R.ok().put("attr", data);
     }
 
     /**
@@ -57,7 +57,6 @@ public class AttrController {
     @RequestMapping("/save")
     public R save(@RequestBody AttrVo attrVo){
 		attrService.saveAttrVo(attrVo);
-
         return R.ok();
     }
 
@@ -65,9 +64,8 @@ public class AttrController {
      * 修改
      */
     @RequestMapping("/update")
-    public R update(@RequestBody AttrEntity attr){
-		attrService.updateById(attr);
-
+    public R update(@RequestBody AttrVo attrVo){
+		attrService.updateAttr(attrVo);
         return R.ok();
     }
 
