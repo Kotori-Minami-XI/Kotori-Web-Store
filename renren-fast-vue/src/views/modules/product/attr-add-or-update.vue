@@ -181,7 +181,7 @@ export default {
             `/product/attrgroup/list/${path[path.length - 1]}`
           ),
           method: "get",
-          params: this.$http.adornParams({ page: 1, limit: 10000000 })
+          params: this.$http.adornParams({ page: 1, limit: 10, key: null })
         }).then(({ data }) => {
           if (data && data.code === 0) {
             this.attrGroups = data.page.list;
@@ -213,6 +213,7 @@ export default {
             method: "get",
             params: this.$http.adornParams()
           }).then(({ data }) => {
+            console.log(data);
             if (data && data.code === 0) {
               this.dataForm.attrName = data.attr.attrName;
               this.dataForm.searchType = data.attr.searchType;

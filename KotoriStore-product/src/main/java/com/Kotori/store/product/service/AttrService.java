@@ -1,5 +1,6 @@
 package com.Kotori.store.product.service;
 
+import com.Kotori.store.vo.AttrVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.Kotori.common.utils.PageUtils;
 import com.Kotori.store.product.entity.AttrEntity;
@@ -15,6 +16,8 @@ import java.util.Map;
  */
 public interface AttrService extends IService<AttrEntity> {
 
-    PageUtils queryPage(Map<String, Object> params);
+    PageUtils queryPage(Map<String, Object> params, long catId);
+
+    void saveAttrVo(AttrVo attrVo);
 }
 
