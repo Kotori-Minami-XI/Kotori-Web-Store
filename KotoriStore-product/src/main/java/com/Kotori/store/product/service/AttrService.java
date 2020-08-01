@@ -17,7 +17,7 @@ import java.util.Map;
  */
 public interface AttrService extends IService<AttrEntity> {
 
-    PageUtils queryPage(Map<String, Object> params, long catId);
+    PageUtils queryPage(Map<String, Object> params, long catId, String type);
 
     void saveAttrVo(AttrVo attrVo);
 
