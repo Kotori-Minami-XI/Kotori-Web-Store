@@ -6,6 +6,7 @@ import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
 import com.Kotori.store.product.entity.AttrEntity;
+import com.Kotori.store.product.service.AttrAttrgroupRelationService;
 import com.Kotori.store.product.service.AttrService;
 import com.Kotori.store.product.service.CategoryService;
 import com.Kotori.store.vo.AttrGroupRelationVo;
@@ -37,6 +38,9 @@ public class AttrGroupController {
     @Autowired
     private AttrService attrService;
 
+    @Autowired
+    private AttrAttrgroupRelationService attrAttrgroupRelationService;
+
     /**
      * Obtain attr by attrgroupId
      */
@@ -44,6 +48,25 @@ public class AttrGroupController {
     public R attrRelation(@PathVariable("attrgroupId") Long attrgroupId){
         List<AttrEntity> list = attrService.getRelationAttr(attrgroupId);
         return R.ok().put("data", list);
+    }
+
+    /**
+     * Obtain no attr by attrgroupId
+     */
+    @RequestMapping("/{attrgroupId}/noattr/relation")
+    public R attrNoRelation(@RequestParam Map<String, Object> params, @PathVariable("attrgroupId") Long attrgroupId){
+        PageUtils page = attrService.getNoRelationAttr(params, attrgroupId);
+
+        return R.ok().put("page", page);
+    }
+
+    /**
+     * Obtain no attr by attrgroupId
+     */
+    @RequestMapping("/attr/relation")
+    public R addRelation(@RequestBody List<AttrGroupRelationVo> attrGroupRelationVos){
+        attrAttrgroupRelationService.saveBatch(attrGroupRelationVos);
+        return R.ok();
     }
 
     /**
