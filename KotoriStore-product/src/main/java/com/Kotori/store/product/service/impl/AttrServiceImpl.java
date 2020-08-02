@@ -8,13 +8,16 @@ import com.Kotori.store.product.entity.AttrAttrgroupRelationEntity;
 import com.Kotori.store.product.entity.AttrGroupEntity;
 import com.Kotori.store.product.entity.CategoryEntity;
 import com.Kotori.store.product.service.CategoryService;
+import com.Kotori.store.vo.AttrGroupRelationVo;
 import com.Kotori.store.vo.AttrResponseVo;
 import com.Kotori.store.vo.AttrVo;
 import com.fasterxml.jackson.databind.util.BeanUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -166,5 +169,30 @@ public class AttrServiceImpl extends ServiceImpl<AttrDao, AttrEntity> implements
                 attrAttrgroupRelationDao.insert(attrAttrgroupRelationEntity);
             }
         }
+    }
+
+    @Override
+    public List<AttrEntity> getRelationAttr(Long attrgroupId) {
+        List<AttrAttrgroupRelationEntity> attrgroupList = attrAttrgroupRelationDao.selectList(
+                new QueryWrapper<AttrAttrgroupRelationEntity>().eq("attr_group_id",attrgroupId));
+
+        List<AttrEntity> attrList = new ArrayList(attrgroupList.size());
+        for (AttrAttrgroupRelationEntity attrAttrgroupRelationEntity : attrgroupList) {
+            attrList.add(this.getById(attrAttrgroupRelationEntity.getAttrId()));
+        }
+        return attrList;
+    }
+
+    @Override
+    public void deleteRelation(AttrGroupRelationVo[] attrGroupRelationVos) {
+        List<AttrGroupRelationVo> vosList = Arrays.asList(attrGroupRelationVos);
+        List<AttrAttrgroupRelationEntity> entityList = new ArrayList();
+
+        for (AttrGroupRelationVo attrGroupRelationVo : vosList) {
+            AttrAttrgroupRelationEntity attrAttrgroupRelationEntity = new AttrAttrgroupRelationEntity();
+            BeanUtils.copyProperties(attrGroupRelationVo, attrAttrgroupRelationEntity);
+            entityList.add(attrAttrgroupRelationEntity);
+        }
+        attrAttrgroupRelationDao.deleteBatchRelation(entityList);
     }
 }

@@ -71,6 +71,7 @@
         width="150"
         label="操作">
         <template slot-scope="scope">
+          <el-button type="text" size="small" @click="relationHandle(scope.row.attrGroupId)">关联</el-button>
           <el-button type="text" size="small" @click="addOrUpdateHandle(scope.row.attrGroupId)">修改</el-button>
           <el-button type="text" size="small" @click="deleteHandle(scope.row.attrGroupId)">删除</el-button>
         </template>
@@ -87,6 +88,8 @@
     </el-pagination>
     <!-- 弹窗, 新增 / 修改 -->
     <add-or-update v-if="addOrUpdateVisible" ref="addOrUpdate" @refreshDataList="getDataList"></add-or-update>
+
+    <relation-update v-if="relationVisible" ref="relationUpdate" @refreshData="getDataList"></relation-update>
   </div>
   </div>
   
@@ -97,11 +100,12 @@
 <script>
 //这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
 //例如：import 《组件名称》 from '《组件路径》';
-import Category from '../common/category'
-import AddOrUpdate from './attrgroup-add-or-update'
+import Category from '../common/category';
+import AddOrUpdate from './attrgroup-add-or-update';
+import RelationUpdate from "./attr-group-relation";
 export default {
 //import引入的组件需要注入到对象中才能使用
-components: {Category:Category, AddOrUpdate:AddOrUpdate},
+components: {Category:Category, AddOrUpdate:AddOrUpdate, RelationUpdate:RelationUpdate},
     data () {
         return {
         catId: 0,
@@ -114,7 +118,8 @@ components: {Category:Category, AddOrUpdate:AddOrUpdate},
         totalPage: 0,
         dataListLoading: false,
         dataListSelections: [],
-        addOrUpdateVisible: false
+        addOrUpdateVisible: false,
+        relationVisible: false
         }
     },
     
@@ -122,6 +127,12 @@ activated () {
       this.getDataList()
     },
     methods: {
+      relationHandle(groupId) {
+        this.relationVisible = true;
+        this.$nextTick(() => {
+          this.$refs.relationUpdate.init(groupId);
+        });
+      },
       // 获取数据列表
       getDataList () {
         this.dataListLoading = true

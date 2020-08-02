@@ -1,16 +1,16 @@
 package com.Kotori.store.product.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.Kotori.store.product.entity.AttrEntity;
+import com.Kotori.store.product.service.AttrService;
 import com.Kotori.store.product.service.CategoryService;
+import com.Kotori.store.vo.AttrGroupRelationVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.Kotori.store.product.entity.AttrGroupEntity;
 import com.Kotori.store.product.service.AttrGroupService;
@@ -33,6 +33,29 @@ public class AttrGroupController {
 
     @Autowired
     private CategoryService CategoryService;
+
+    @Autowired
+    private AttrService attrService;
+
+    /**
+     * Obtain attr by attrgroupId
+     */
+    @RequestMapping("/{attrgroupId}/attr/relation")
+    public R attrRelation(@PathVariable("attrgroupId") Long attrgroupId){
+        List<AttrEntity> list = attrService.getRelationAttr(attrgroupId);
+        return R.ok().put("data", list);
+    }
+
+    /**
+     * delete AttrGroup Relations
+     */
+    @RequestMapping("/attr/relation/delete")
+    public R deleteRelation(@RequestBody AttrGroupRelationVo[] attrGroupRelationVos){
+        attrService.deleteRelation(attrGroupRelationVos);
+
+        return R.ok();
+    }
+
 
     /**
      * Get all categories in page

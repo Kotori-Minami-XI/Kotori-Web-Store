@@ -1,11 +1,13 @@
 package com.Kotori.store.product.service;
 
+import com.Kotori.store.vo.AttrGroupRelationVo;
 import com.Kotori.store.vo.AttrResponseVo;
 import com.Kotori.store.vo.AttrVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.Kotori.common.utils.PageUtils;
 import com.Kotori.store.product.entity.AttrEntity;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -24,5 +26,9 @@ public interface AttrService extends IService<AttrEntity> {
     AttrResponseVo getAttrInfo(Long attrId);
 
     void updateAttr(AttrVo attrVo);
+
+    List<AttrEntity> getRelationAttr(Long attrgroupId);
+
+    void deleteRelation(AttrGroupRelationVo[] attrGroupRelationVos);
 }
 
