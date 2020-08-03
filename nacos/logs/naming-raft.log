@@ -36,3 +36,5 @@
 
 2020-08-03 21:46:31,806 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"192.168.111.1","key":"192.168.111.1:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
 
+2020-08-03 22:34:27,498 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@KotoriStore-member-service
+
