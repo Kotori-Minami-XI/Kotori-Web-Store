@@ -11,6 +11,13 @@ spring:
 
     gateway:
       routes:
+        - id: member_route
+          uri: lb://KotoriStore-member-service
+          predicates:
+            - Path=/api/member/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
         - id: product_route
           uri: lb://KotoriStore-product-service
           predicates:
