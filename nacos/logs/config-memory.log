@@ -2674,3 +2674,23 @@
 
 2020-08-03 23:00:45,649 INFO toNotifyTaskSize=0
 
+2020-08-03 23:00:45,649 INFO groupCount=2, subscriberClientCount=0, subscriberCount=0
+
+2020-08-03 23:00:55,649 INFO [long-pulling] client count 0
+
+2020-08-03 23:00:55,650 INFO toNotifyTaskSize=0
+
+2020-08-03 23:00:55,650 INFO groupCount=2, subscriberClientCount=0, subscriberCount=0
+
+2020-08-03 23:01:05,651 INFO toNotifyTaskSize=0
+
+2020-08-03 23:01:05,650 INFO [long-pulling] client count 0
+
+2020-08-03 23:01:05,651 INFO groupCount=2, subscriberClientCount=0, subscriberCount=0
+
+2020-08-03 23:01:15,653 INFO toNotifyTaskSize=0
+
+2020-08-03 23:01:15,654 INFO groupCount=2, subscriberClientCount=0, subscriberCount=0
+
+2020-08-03 23:01:15,654 INFO [long-pulling] client count 0
+

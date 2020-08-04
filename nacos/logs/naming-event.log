@@ -82,3 +82,5 @@
 
 2020-08-03 23:00:42,798 INFO DEFAULT_GROUP@@KotoriStore-member-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.111.1:8000:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
+2020-08-03 23:00:42,799 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@KotoriStore-member-service, ips: 
+
