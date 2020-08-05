@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Mon Aug 03 21:46:11 CST 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0173-b492-90bb-00000c8f2cc8 
+Wed Aug 05 18:10:38 CST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0173-be19-f19c-00000a5325e8 
 on database directory C:\Users\54356\Desktop\Java\Kotori-Web-Store\nacos\data\derby-data with class loader org.springframework.boot.loader.LaunchedURLClassLoader@2e0fa5d3 
 Loaded from jar:file:/C:/Users/54356/Desktop/Java/Kotori-Web-Store/nacos/target/nacos-server.jar!/BOOT-INF/lib/derby-10.10.1.1.jar!/
 java.vendor=Oracle Corporation

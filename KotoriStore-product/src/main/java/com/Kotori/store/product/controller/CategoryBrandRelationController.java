@@ -1,10 +1,14 @@
 package com.Kotori.store.product.controller;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import com.Kotori.store.product.entity.BrandEntity;
+import com.Kotori.store.vo.BrandVo;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,6 +39,24 @@ public class CategoryBrandRelationController {
 
         return R.ok().put("data", data);
     }
+
+    /***
+     *  Obtain all brands by category Id
+     */
+    @RequestMapping(value = "/brands/list")
+    public R brandList(@RequestParam("catId") Long catId){
+        List<BrandEntity> brandEntities = categoryBrandRelationService.getBrandsByCatId(catId);
+
+        List<BrandVo> brandVoList = new ArrayList(brandEntities.size());
+        for (BrandEntity brandEntity : brandEntities) {
+            BrandVo brandVo = new BrandVo();
+            brandVo.setBrandId(brandEntity.getBrandId());
+            brandVo.setBrandName(brandEntity.getName());
+            brandVoList.add(brandVo);
+        }
+        return R.ok().put("data", brandVoList);
+    }
+
 
 
     /**

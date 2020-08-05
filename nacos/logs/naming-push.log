@@ -1,62 +1,40 @@
-2020-08-03 21:46:28,678 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
+2020-08-05 18:11:10,078 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
 
-2020-08-03 21:46:28,686 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
+2020-08-05 18:12:01,131 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
 
-2020-08-03 21:46:29,706 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-05 18:12:20,295 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 
-2020-08-03 21:46:31,523 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
+2020-08-05 18:12:33,985 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
 
-2020-08-03 21:47:54,781 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-05 18:14:15,059 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
 
-2020-08-03 21:48:09,908 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-05 18:14:15,061 INFO serviceName: DEFAULT_GROUP@@renren-fast changed, schedule push for: 192.168.1.6:64392, agent: Nacos-Java-Client:v1.1.4, key: 192.168.1.6,64392,813890372495400
 
-2020-08-03 21:48:26,148 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-05 18:14:15,062 INFO send udp packet: 192.168.1.6,64392,813890372495400
 
-2020-08-03 21:49:08,674 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
+2020-08-05 18:14:15,077 INFO received ack: {"type": "push-ack", "lastRefTime":"813890372495400", "data":""} from: 192.168.1.6:, cost: 64392 ms, unacked: 15, total push: 0
 
-2020-08-03 21:49:18,115 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
+2020-08-05 19:56:21,903 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 
-2020-08-03 21:49:23,107 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
+2020-08-05 19:56:21,905 INFO serviceName: DEFAULT_GROUP@@KotoriStore-product-service changed, schedule push for: 192.168.1.6:64392, agent: Nacos-Java-Client:v1.1.4, key: 192.168.1.6,64392,820017216809000
 
-2020-08-03 21:52:13,652 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
+2020-08-05 19:56:21,905 INFO send udp packet: 192.168.1.6,64392,820017216809000
 
-2020-08-03 21:53:51,620 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
+2020-08-05 19:56:21,909 INFO received ack: {"type": "push-ack", "lastRefTime":"820017216809000", "data":""} from: 192.168.1.6:, cost: 64392 ms, unacked: 4, total push: 0
 
-2020-08-03 21:53:53,493 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
+2020-08-05 19:56:35,185 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 
-2020-08-03 21:53:58,484 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
+2020-08-05 19:56:35,189 INFO serviceName: DEFAULT_GROUP@@KotoriStore-product-service changed, schedule push for: 192.168.1.6:64392, agent: Nacos-Java-Client:v1.1.4, key: 192.168.1.6,64392,820030500985900
 
-2020-08-03 22:34:28,501 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
+2020-08-05 19:56:35,189 INFO send udp packet: 192.168.1.6,64392,820030500985900
 
-2020-08-03 22:56:38,738 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
+2020-08-05 19:56:35,192 INFO received ack: {"type": "push-ack", "lastRefTime":"820030500985900", "data":""} from: 192.168.1.6:, cost: 64392 ms, unacked: 3, total push: 0
 
-2020-08-03 22:56:43,618 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
+2020-08-05 19:56:40,182 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 
-2020-08-03 22:56:45,864 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-05 19:56:40,182 INFO serviceName: DEFAULT_GROUP@@KotoriStore-product-service changed, schedule push for: 192.168.1.6:64392, agent: Nacos-Java-Client:v1.1.4, key: 192.168.1.6,64392,820035494418200
 
-2020-08-03 22:56:48,614 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
+2020-08-05 19:56:40,182 INFO send udp packet: 192.168.1.6,64392,820035494418200
 
-2020-08-03 22:56:53,028 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-03 22:56:58,007 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-03 23:00:24,571 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
-
-2020-08-03 23:00:24,572 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
-
-2020-08-03 23:00:25,910 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-03 23:00:27,440 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-03 23:00:28,787 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
-
-2020-08-03 23:00:39,605 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
-
-2020-08-03 23:00:39,605 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
-
-2020-08-03 23:00:40,922 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-03 23:00:42,443 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-03 23:00:43,800 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
+2020-08-05 19:56:40,183 INFO received ack: {"type": "push-ack", "lastRefTime":"820035494418200", "data":""} from: 192.168.1.6:, cost: 64392 ms, unacked: 1, total push: 0
 

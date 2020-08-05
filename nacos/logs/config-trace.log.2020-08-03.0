@@ -1,0 +1,12 @@
+2020-08-03 21:49:01,972|192.168.111.1|renren-fast|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 21:49:02,013|192.168.111.1|renren-fast.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 21:49:02,019|192.168.111.1|renren-fast-dev.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 21:52:04,232|192.168.111.1|KotoriStore-product-service|DEFAULT_GROUP|c7e99984-0e39-43a1-9a40-a306212f20fb|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 21:52:04,241|192.168.111.1|KotoriStore-product-service.properties|DEFAULT_GROUP|c7e99984-0e39-43a1-9a40-a306212f20fb|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 21:53:43,755|192.168.111.1|KotoriStore-thridParty|DEFAULT_GROUP|4f02d7a9-91ef-49eb-928e-14f0db16a473|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 21:53:43,761|192.168.111.1|KotoriStore-thridParty.properties|DEFAULT_GROUP|4f02d7a9-91ef-49eb-928e-14f0db16a473|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 21:53:43,779|192.168.111.1|oss.yml|DEFAULT_GROUP|4f02d7a9-91ef-49eb-928e-14f0db16a473|unknown|1595726400692|pull|ok|736423087|127.0.0.1
+2020-08-03 22:34:18,866|192.168.111.1|KotoriStore-member-service|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 22:34:18,874|192.168.111.1|KotoriStore-member-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 22:56:33,473|192.168.111.1|KotoriStore-member-service|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-03 22:56:33,484|192.168.111.1|KotoriStore-member-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1

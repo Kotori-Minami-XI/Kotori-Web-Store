@@ -4,9 +4,12 @@ import com.Kotori.store.product.dao.BrandDao;
 import com.Kotori.store.product.dao.CategoryDao;
 import com.Kotori.store.product.entity.BrandEntity;
 import com.Kotori.store.product.entity.CategoryEntity;
+import com.Kotori.store.product.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -31,6 +34,12 @@ public class CategoryBrandRelationServiceImpl extends ServiceImpl<CategoryBrandR
     @Resource
     private CategoryDao categoryDao;
 
+    @Resource
+    private CategoryBrandRelationDao categoryBrandRelationDao;
+
+    @Resource
+    private BrandService brandService;
+
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
         IPage<CategoryBrandRelationEntity> page = this.page(
@@ -52,5 +61,18 @@ public class CategoryBrandRelationServiceImpl extends ServiceImpl<CategoryBrandR
         categoryBrandRelation.setCatelogName(categoryEntity.getName());
 
         this.save(categoryBrandRelation);
+    }
+
+    @Override
+    public List<BrandEntity> getBrandsByCatId(Long catId) {
+        List<CategoryBrandRelationEntity> categoryBrandRelationEntities = categoryBrandRelationDao.selectList(
+                new QueryWrapper<CategoryBrandRelationEntity>().eq("catelog_id", catId));
+
+        List<BrandEntity> brandEntities = new ArrayList(categoryBrandRelationEntities.size());
+        for (CategoryBrandRelationEntity categoryBrandRelationEntity : categoryBrandRelationEntities) {
+            BrandEntity brandEntity = brandService.getById(categoryBrandRelationEntity.getBrandId());
+            brandEntities.add(brandEntity);
+        }
+        return brandEntities;
     }
 }
