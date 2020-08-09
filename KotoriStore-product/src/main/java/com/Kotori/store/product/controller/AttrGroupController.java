@@ -10,6 +10,7 @@ import com.Kotori.store.product.service.AttrAttrgroupRelationService;
 import com.Kotori.store.product.service.AttrService;
 import com.Kotori.store.product.service.CategoryService;
 import com.Kotori.store.vo.AttrGroupRelationVo;
+import com.Kotori.store.vo.AttrGroupWithAttrsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -67,6 +68,15 @@ public class AttrGroupController {
     public R addRelation(@RequestBody List<AttrGroupRelationVo> attrGroupRelationVos){
         attrAttrgroupRelationService.saveBatch(attrGroupRelationVos);
         return R.ok();
+    }
+
+    /**
+     * Obtain no attr by attrgroupId
+     */
+    @RequestMapping("/{catelogId}/withattr")
+    public R getAttrGroupWithAttrs(@PathVariable("catelogId") Long catelogId){
+        List<AttrGroupWithAttrsVo> list = attrGroupService.getAttrGroupWithAttrsByCatelogId(catelogId);
+        return R.ok().put("data", list);
     }
 
     /**
