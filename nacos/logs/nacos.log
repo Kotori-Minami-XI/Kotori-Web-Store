@@ -134,3 +134,69 @@
 
 2020-08-09 08:25:39,257 WARN clearConfigHistory start
 
+2020-08-09 08:35:38,490 INFO [capacityManagement] start correct usage
+
+2020-08-09 08:35:38,493 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 08:35:39,260 WARN clearConfigHistory start
+
+2020-08-09 08:45:38,495 INFO [capacityManagement] start correct usage
+
+2020-08-09 08:45:38,499 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 08:45:39,262 WARN clearConfigHistory start
+
+2020-08-09 08:55:38,502 INFO [capacityManagement] start correct usage
+
+2020-08-09 08:55:38,508 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 08:55:39,265 WARN clearConfigHistory start
+
+2020-08-09 09:05:38,509 INFO [capacityManagement] start correct usage
+
+2020-08-09 09:05:38,515 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 09:05:39,271 WARN clearConfigHistory start
+
+2020-08-09 09:15:38,519 INFO [capacityManagement] start correct usage
+
+2020-08-09 09:15:38,527 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 09:15:39,273 WARN clearConfigHistory start
+
+2020-08-09 09:25:38,528 INFO [capacityManagement] start correct usage
+
+2020-08-09 09:25:38,532 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 09:25:39,283 WARN clearConfigHistory start
+
+2020-08-09 09:35:38,533 INFO [capacityManagement] start correct usage
+
+2020-08-09 09:35:38,537 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 09:35:39,285 WARN clearConfigHistory start
+
+2020-08-09 09:45:38,538 INFO [capacityManagement] start correct usage
+
+2020-08-09 09:45:38,539 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 09:45:39,289 WARN clearConfigHistory start
+
+2020-08-09 09:55:38,541 INFO [capacityManagement] start correct usage
+
+2020-08-09 09:55:38,542 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 09:55:39,293 WARN clearConfigHistory start
+
+2020-08-09 10:05:38,544 INFO [capacityManagement] start correct usage
+
+2020-08-09 10:05:38,545 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 10:05:39,296 WARN clearConfigHistory start
+
+2020-08-09 10:15:38,547 INFO [capacityManagement] start correct usage
+
+2020-08-09 10:15:38,548 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-08-09 10:15:39,299 WARN clearConfigHistory start
+
