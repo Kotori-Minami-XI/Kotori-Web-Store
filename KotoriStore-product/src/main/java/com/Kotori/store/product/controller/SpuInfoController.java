@@ -5,6 +5,7 @@ import java.util.Map;
 
 import com.Kotori.store.vo.SpuSaveVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -56,8 +57,9 @@ public class SpuInfoController {
      * Save
      */
     @RequestMapping("/save")
+    @Transactional
     public R save(@RequestBody SpuSaveVo spuSaveVo){
-
+        spuInfoService.saveInfo(spuSaveVo);
         return R.ok();
     }
 

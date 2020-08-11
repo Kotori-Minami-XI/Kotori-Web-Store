@@ -1,5 +1,7 @@
 package com.Kotori.store.product.service;
 
+import com.Kotori.store.product.entity.SpuInfoDescEntity;
+import com.Kotori.store.vo.SpuSaveVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.Kotori.common.utils.PageUtils;
 import com.Kotori.store.product.entity.SpuInfoEntity;
@@ -16,5 +18,10 @@ import java.util.Map;
 public interface SpuInfoService extends IService<SpuInfoEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    void saveInfo(SpuSaveVo spuSaveVo);
+
+    void saveBaseSpuInfo(SpuInfoEntity spuInfoEntity);
+
 }
 
