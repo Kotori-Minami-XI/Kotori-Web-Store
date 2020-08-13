@@ -1,12 +1,16 @@
 package com.Kotori.store.product.service.impl;
 
+import com.Kotori.store.product.entity.AttrEntity;
+import com.Kotori.store.product.entity.ProductAttrValueEntity;
 import com.Kotori.store.product.entity.SpuInfoDescEntity;
-import com.Kotori.store.product.service.SpuInfoDescService;
+import com.Kotori.store.product.service.*;
+import com.Kotori.store.vo.BaseAttrs;
 import com.Kotori.store.vo.SpuSaveVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +22,6 @@ import com.Kotori.common.utils.Query;
 
 import com.Kotori.store.product.dao.SpuInfoDao;
 import com.Kotori.store.product.entity.SpuInfoEntity;
-import com.Kotori.store.product.service.SpuInfoService;
 
 
 @Service("spuInfoService")
@@ -26,6 +29,18 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
 
     @Autowired
     SpuInfoDescService spuInfoDescService;
+
+    @Autowired
+    SpuImagesService spuImagesService;
+
+    @Autowired
+    AttrService attrService;
+
+    @Autowired
+    ProductAttrValueService productAttrValueService;
+
+    @Autowired
+    SkuInfoService skuInfoService;
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
@@ -53,8 +68,29 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         spuInfoDescEntity.setDecript(String.join(",",list));
         spuInfoDescService.saveSpuInfoDesc(spuInfoDescEntity);
 
-        // 3.
+        // 3. Save pms_spu_image
+        List<String> images = spuSaveVo.getImages();
+        spuImagesService.saveImages(spuInfoEntity.getId(), images);
 
+        // 4. Save pms_product_attr_value
+        List<BaseAttrs> baseAttrsList = spuSaveVo.getBaseAttrs();
+        List<ProductAttrValueEntity> productAttrValueEntityList = new ArrayList();
+        for (BaseAttrs baseAttrs : baseAttrsList) {
+            ProductAttrValueEntity productAttrValueEntity = new ProductAttrValueEntity();
+            productAttrValueEntity.setAttrId(baseAttrs.getAttrId());
+            AttrEntity id = attrService.getById(baseAttrs.getAttrId());
+            productAttrValueEntity.setAttrName(id.getAttrName());
+            productAttrValueEntity.setAttrValue(baseAttrs.getAttrValues());
+            productAttrValueEntity.setQuickShow(baseAttrs.getShowDesc());
+            productAttrValueEntity.setSpuId(spuInfoEntity.getId());
+
+            productAttrValueEntityList.add(productAttrValueEntity);
+        }
+        productAttrValueService.saveProductAttr(productAttrValueEntityList);
+
+        // 5.
+        //List<Skus>
+        //skuInfoService
     }
 
     @Override

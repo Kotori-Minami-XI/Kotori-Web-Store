@@ -1,6 +1,9 @@
 package com.Kotori.store.product.service.impl;
 
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -26,4 +29,19 @@ public class SpuImagesServiceImpl extends ServiceImpl<SpuImagesDao, SpuImagesEnt
         return new PageUtils(page);
     }
 
+    @Override
+    public void saveImages(Long id, List<String> images) {
+        if (images == null || images.size() == 0) {
+
+        } else {
+            List<SpuImagesEntity> list = new ArrayList();
+            for (String image : images) {
+                SpuImagesEntity spuImagesEntity = new SpuImagesEntity();
+                spuImagesEntity.setSpuId(id);
+                spuImagesEntity.setImgUrl(image);
+                list.add(spuImagesEntity);
+            }
+            this.saveBatch(list);
+        }
+    }
 }

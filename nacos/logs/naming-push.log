@@ -1,92 +1,30 @@
-2020-08-11 18:30:41,280 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-13 18:40:45,778 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
 
-2020-08-11 18:30:44,258 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
+2020-08-13 18:41:37,869 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
 
-2020-08-11 18:30:44,262 INFO serviceName: DEFAULT_GROUP@@renren-fast changed, schedule push for: 192.168.1.6:52104, agent: Nacos-Java-Client:v1.1.4, key: 192.168.1.6,52104,75076823043400
+2020-08-13 18:43:23,306 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 
-2020-08-11 18:30:44,262 INFO send udp packet: 192.168.1.6,52104,75076823043400
+2020-08-13 20:59:15,583 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
 
-2020-08-11 18:30:44,273 INFO received ack: {"type": "push-ack", "lastRefTime":"75076823043400", "data":""} from: 192.168.1.6:, cost: 52104 ms, unacked: 11, total push: 0
+2020-08-13 20:59:15,583 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 
-2020-08-11 18:32:00,674 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
+2020-08-13 20:59:15,996 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
 
-2020-08-11 18:32:06,742 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
+2020-08-13 20:59:17,852 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
 
-2020-08-11 18:34:35,444 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
+2020-08-13 20:59:18,269 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
 
-2020-08-11 18:39:46,388 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-13 20:59:18,834 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 
-2020-08-11 18:39:53,492 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-13 22:20:06,812 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
 
-2020-08-11 18:39:58,473 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-13 22:20:06,813 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
 
-2020-08-11 19:38:34,547 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
+2020-08-13 22:20:06,814 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 
-2020-08-11 19:38:34,548 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
+2020-08-13 22:20:21,856 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
 
-2020-08-11 19:38:34,961 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-13 22:20:21,859 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
 
-2020-08-11 19:38:34,962 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
-
-2020-08-11 19:38:34,984 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-11 19:38:35,742 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
-
-2020-08-11 19:38:37,772 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-11 19:38:38,004 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-11 19:38:39,753 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
-
-2020-08-11 20:20:34,626 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-11 20:20:34,626 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-11 20:20:34,627 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
-
-2020-08-11 20:20:34,627 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
-
-2020-08-11 20:20:34,627 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
-
-2020-08-11 20:20:36,897 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
-
-2020-08-11 20:20:37,378 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
-
-2020-08-11 20:20:37,423 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
-
-2020-08-11 20:20:39,506 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-11 20:20:39,506 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-11 21:03:37,752 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-11 21:03:37,787 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
-
-2020-08-11 21:03:37,787 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
-
-2020-08-11 21:03:37,789 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-11 21:03:37,789 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
-
-2020-08-11 21:03:39,702 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-11 21:03:39,719 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-11 21:03:42,702 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
-
-2020-08-11 21:03:42,704 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
-
-2020-08-11 22:30:03,830 INFO DEFAULT_GROUP@@renren-fast is changed, add it to push queue.
-
-2020-08-11 22:30:03,830 INFO DEFAULT_GROUP@@KotoriStore-member-service is changed, add it to push queue.
-
-2020-08-11 22:30:03,837 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-11 22:30:03,837 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
-
-2020-08-11 22:30:03,840 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
-
-2020-08-11 22:30:05,361 INFO DEFAULT_GROUP@@KotoriStore-thridParty is changed, add it to push queue.
-
-2020-08-11 22:30:05,363 INFO DEFAULT_GROUP@@KotoriStore-gateway is changed, add it to push queue.
+2020-08-13 22:20:21,859 INFO DEFAULT_GROUP@@KotoriStore-product-service is changed, add it to push queue.
 

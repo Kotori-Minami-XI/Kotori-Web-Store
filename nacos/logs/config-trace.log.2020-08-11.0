@@ -1,0 +1,7 @@
+2020-08-11 18:31:47,757|192.168.111.1|KotoriStore-product-service|DEFAULT_GROUP|c7e99984-0e39-43a1-9a40-a306212f20fb|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-11 18:31:47,797|192.168.111.1|KotoriStore-product-service.properties|DEFAULT_GROUP|c7e99984-0e39-43a1-9a40-a306212f20fb|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-11 18:31:53,375|192.168.111.1|oss.yml|DEFAULT_GROUP|4f02d7a9-91ef-49eb-928e-14f0db16a473|unknown|1595726400692|pull|ok|1415512683|127.0.0.1
+2020-08-11 18:31:53,382|192.168.111.1|KotoriStore-thridParty|DEFAULT_GROUP|4f02d7a9-91ef-49eb-928e-14f0db16a473|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-11 18:31:53,389|192.168.111.1|KotoriStore-thridParty.properties|DEFAULT_GROUP|4f02d7a9-91ef-49eb-928e-14f0db16a473|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-11 18:34:25,746|192.168.111.1|KotoriStore-member-service|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-08-11 18:34:25,755|192.168.111.1|KotoriStore-member-service.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
